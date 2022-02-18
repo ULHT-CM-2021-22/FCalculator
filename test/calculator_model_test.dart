@@ -1,6 +1,6 @@
 import 'package:f_calculator/models/calculator_model.dart';
 import 'package:f_calculator/models/operation_model.dart';
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 
 void main() {
