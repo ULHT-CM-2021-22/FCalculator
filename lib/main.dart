@@ -1,4 +1,5 @@
 import 'package:f_calculator/screens/calculator_screen.dart';
+import 'package:f_calculator/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,22 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CalculatorScreen(title: 'Calculadora'),
+      home: MainScreen(
+        screens: [
+          CalculatorScreen(title: 'Calculadora'),
+          CalculatorScreen(title: 'Histórico')
+        ],
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calculate),
+            label: "Calculadora"
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.history),
+            label: "Histórico"
+          ),
+        ],
+      ),
     );
   }
 }

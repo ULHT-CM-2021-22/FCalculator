@@ -7,12 +7,11 @@ class Button extends StatelessWidget {
   final Color color;
 
   Button({
-    Key? key,
     required this.text,
     required this.onPressed,
     this.horizontalDouble = false,
     this.color = Colors.black54,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
