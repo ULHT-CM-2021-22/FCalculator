@@ -28,7 +28,7 @@ class Button extends StatelessWidget {
         onPressed: () => onPressed(text),
         child: Text(
           this.text,
-          style: TextStyle(fontSize: 30, color: Colors.white),
+          style: TextStyle(fontSize: 28, color: Colors.white),
         ),
       ),
     );

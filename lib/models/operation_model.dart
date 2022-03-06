@@ -10,4 +10,9 @@ class OperationModel extends Equatable {
   @override
   List<Object?> get props => [expression, result];
 
+  @override
+  String toString() {
+    return "$expression = $result";
+  }
+
 }

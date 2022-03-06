@@ -18,7 +18,6 @@ class Display extends StatelessWidget {
             alignment: Alignment.centerRight,
             child: Container(
               margin: EdgeInsets.all(4.0),
-              height: MediaQuery.of(context).size.height / 7,
               child: Text(
                 content,
                 style: TextStyle(

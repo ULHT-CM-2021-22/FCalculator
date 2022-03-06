@@ -1,4 +1,5 @@
 import 'package:f_calculator/screens/calculator_screen.dart';
+import 'package:f_calculator/screens/history_screen.dart';
 import 'package:f_calculator/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       home: MainScreen(
         screens: [
           CalculatorScreen(title: 'Calculadora'),
-          CalculatorScreen(title: 'Histórico')
+          HistoricScreen(title: 'Histórico')
         ],
         items: [
           BottomNavigationBarItem(
